@@ -1,1 +1,24 @@
-<p>deck works!</p>
+<h2>The Decks</h2>
+<ul class="decks">
+  <li
+    *ngFor="let deck of decks"
+    [class.selected]="deck === selectedDeck"
+    (click)="onSelect(deck)"
+  >
+    <span class="badge">{{ deck.id }}</span
+    >{{ deck.name }}
+  </li>
+</ul>
+
+<app-deck-detail [deck]="selectedDeck"></app-deck-detail>
+
+<!-- 
+<h2>{{ deck.name }}</h2>
+<div><span>id: </span>{{ deck.id }}</div>
+<div><span>name: </span>{{ deck.name | uppercase }}</div>
+
+<div>
+  <label>
+    <input [(ngModel)]="deck.name" placeholder="name" />
+  </label>
+</div> -->
