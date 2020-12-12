@@ -2,9 +2,22 @@
   <h2>{{ deck.name | uppercase }} Details</h2>
   <div><span>id: </span>{{ deck.id }}</div>
   <div>
-    <label
-      >name:
-      <input [(ngModel)]="deck.name" placeholder="name" />
-    </label>
+    <div>
+      <label
+        >Name:
+        <input [(ngModel)]="deck.name" placeholder="name" />
+      </label>
+    </div>
+    <div>
+      <label
+        >Description:
+        <input [(ngModel)]="deck.description" placeholder="description" />
+      </label>
+    </div>
+    <div>
+      <label>
+        Deck Size: <input [(ngModel)]="deck.size" placeholder="size" />
+      </label>
+    </div>
   </div>
 </div>
