@@ -3,13 +3,13 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { DeckComponent } from './deck/deck.component';
+import { DecksComponent } from './decks/decks.component';
 import { DeckDetailComponent } from './deck-detail/deck-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DeckComponent,
+    DecksComponent,
     DeckDetailComponent
   ],
   imports: [
